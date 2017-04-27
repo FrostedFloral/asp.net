@@ -9,14 +9,34 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <div id=""></div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <form id="wrapper" runat="server">
 
-    </div>
+        <div id="header" runat="server">
+            <div id="hLogo" runat="server">ASP.NET WEBFORMS</div>
+            <div id="hNav" runat="server">
+                <div class="hNavLink">About</div>
+                <div class="hNavLink">User</div>
+            </div>
+            <div id="hUser" runat="server">
+                <asp:ContentPlaceHolder id="cphUser" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="MainContent" runat="server">
+            <div id="Div1" class="InnerContent" runat="server">
+                <div id="Div2" class="LeftContent" runat="server"><asp:ContentPlaceHolder id="cphLeftContent" runat="server">
+                </asp:ContentPlaceHolder></div>
+                <div id="Div3" class="RightContent" runat="server"><asp:ContentPlaceHolder id="cphRightContent" runat="server">
+                </asp:ContentPlaceHolder></div>
+            </div>
+        </div>
+
+        <div id="footer"  runat="server">
+            <div id="fLogo" runat="server">Nate's thing</div>
+            <div id="fInfo" runat="server">a n8 at school productions<br />2017</div>
+        </div>
+
     </form>
 </body>
 </html>
