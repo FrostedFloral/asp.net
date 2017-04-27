@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="container">
+
+    <div id="header">
+        GraveSearch<br />
+        <asp:Label ID="lblUser" runat="server" Text="" Font-Size="24"></asp:Label>
+    </div>
+
+    <div id="innerContainer">
+        <div id="nav">
+            <a href="Default.aspx">Home</a> | <a href="About.aspx">About</a> | <a href="Gravesites.aspx">Search Gravesites</a> | 
+            <a runat="server" href="Gravestone.aspx" id="navAdd">Add Gravestone</a> | <a runat="server" href="Login.aspx" id="navLogin">Login</a>
+        </div>
+        <div id="input">
+        <asp:ContentPlaceHolder id="cphInput" runat="server">
+            <p>Thank you for calling GraveSearch. All our operators are currently helping other customers. Please, help yourself. go somewhere else on the site as this is under construction.</p>
+            <p>To Add or update graves, you need to log in.</p>
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            Copyright 2017 - A Site of Grave Importance
+        </div>
+    </div>
+        
+</div>
+</form>
+</body>
+</html>
