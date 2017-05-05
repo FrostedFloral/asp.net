@@ -12,10 +12,10 @@
     <form id="wrapper" runat="server">
 
         <div id="header" runat="server">
-            <div id="hLogo" runat="server"><a href="Default.aspx">ASP Webforms</a></div>
+            <div id="hLogo" runat="server"><siteMapNode url="~/Default.aspx" title="ASP.NET" /></div>
             <div id="hNav" runat="server">
-                <div class="hNavLink"><a href="About.aspx">About</a></div>
-                <div class="hNavLink"><a href="ContactMgr.aspx">User</a></div>
+                <div class="hNavLink"><siteMapNode url="~/About.aspx" title="About" /></div>
+                <div class="hNavLink"><siteMapNode url="~/Controls/ContactMgr.aspx" title="Person" /></div>
             </div>
             <div id="hUser" runat="server">
                 <asp:ContentPlaceHolder id="cphUser" runat="server">
@@ -27,7 +27,7 @@
             <div class="InnerContent" runat="server">
                 <div class="LeftContent" runat="server"><asp:ContentPlaceHolder id="cphLeftContent" runat="server">
                 </asp:ContentPlaceHolder></div>
-                <div class="RightContent" runat="server" visible="false"><asp:ContentPlaceHolder id="cphRightContent" runat="server">
+                <div class="RightContent" runat="server"><asp:ContentPlaceHolder id="cphRightContent" runat="server">
                 </asp:ContentPlaceHolder></div>
             </div>
         </div>

@@ -8,6 +8,7 @@ using System.Data;        // Library to bring in a dataset
 public class Person
 {
     //declare private strings
+    private string title;
     private string fName;
     private string mName;
     private string lName;
@@ -47,6 +48,16 @@ public class Person
     }
 
     public Int32 Person_ID = 0;
+
+
+    public string Title
+    {
+        get { return title; }
+        set
+        {
+            title = value;
+        }
+    }
 
     //declare public strings that access the private strings
     public string FName
@@ -170,6 +181,24 @@ public class Person
                 feedback += "Error: Not a valid Email" + "<br />";
             else
                 email = value;
+        }
+    }
+
+    public string Birthday
+    {
+        get { return birthday; }
+        set
+        {
+            birthday = value;
+        }
+    }
+
+    public string Anniversary
+    {
+        get { return anniversary; }
+        set
+        {
+            anniversary = value;
         }
     }
 

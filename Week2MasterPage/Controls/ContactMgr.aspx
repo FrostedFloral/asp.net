@@ -42,10 +42,8 @@
     <br />
            <asp:Button ID="btnAdd" runat="server" Text="Add Person" OnClick="btnAdd_Click" />
 
-    <script>
-        var calBirth = document.getElementById("calBirth");
 
-    </script>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="cphRightContent" Runat="Server">
+            <asp:Label ID="lblDisplay" runat="server" Text="Output"></asp:Label>
 </asp:Content>
