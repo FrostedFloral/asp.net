@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%;">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="wrapper" runat="server">
+
+        <div id="header" runat="server">
+            <div id="hLogo" runat="server"><a href="Default.aspx">ASP Webforms</a></div>
+            <div id="hNav" runat="server">
+                <div class="hNavLink"><a href="About.aspx">About</a></div>
+                <div class="hNavLink"><a href="ContactMgr.aspx">User</a></div>
+            </div>
+            <div id="hUser" runat="server">
+                <asp:ContentPlaceHolder id="cphUser" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="MainContent" runat="server">
+            <div class="InnerContent" runat="server">
+                <div class="LeftContent" runat="server"><asp:ContentPlaceHolder id="cphLeftContent" runat="server">
+                </asp:ContentPlaceHolder></div>
+                <div class="RightContent" runat="server" visible="false"><asp:ContentPlaceHolder id="cphRightContent" runat="server">
+                </asp:ContentPlaceHolder></div>
+            </div>
+        </div>
+
+        <div id="footer"  runat="server">
+            <div id="fLogo" runat="server">Nate's thing</div>
+            <div id="fInfo" runat="server">a n8 at school productions<br />2017</div>
+        </div>
+
+    </form>
+</body>
+</html>
