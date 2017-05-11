@@ -12,11 +12,8 @@
     <form id="wrapper" runat="server">
 
         <div id="header" runat="server">
-            <div id="hLogo" runat="server"><siteMapNode url="~/Default.aspx" title="ASP.NET" /></div>
-            <div id="hNav" runat="server">
-                <div class="hNavLink"><siteMapNode url="~/About.aspx" title="About" /></div>
-                <div class="hNavLink"><siteMapNode url="~/Controls/ContactMgr.aspx" title="Person" /></div>
-            </div>
+            <asp:ContentPlaceHolder id="hLinks" runat="server">
+            </asp:ContentPlaceHolder>
             <div id="hUser" runat="server">
                 <asp:ContentPlaceHolder id="cphUser" runat="server">
                 </asp:ContentPlaceHolder>
