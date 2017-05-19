@@ -1,0 +1,102 @@
+﻿body {
+    background-color:rgba(227,227,227,1);
+}
+html{
+    height:100%;
+}
+
+/*Header*/
+#header{
+    position:fixed;
+    width:100%;
+    height:40px;
+    background-color:rgba(27,27,27,1);
+    color:rgba(227,227,227,1);
+    display:inline-block;
+    left:0px;
+    top:0px;
+    right:0px;
+}
+#hLogo{
+    position:absolute;
+    top:10px;
+    left:40px;
+    color:rgba(227,227,227,1);
+    font-family:Calibri;
+    font-size:larger;
+}
+#hNav{
+    position:absolute;
+    top:10px;
+    right:40px;
+    color:rgba(227,227,227,1);
+    font-family:Calibri;
+    font-size:large;
+}
+.hNavLink{
+    position:relative;
+    float:right;
+    margin-left:22px;
+    text-decoration:underline;
+    color:rgba(227,227,227,1);
+}
+a:visited {
+    color:rgba(227,227,227,1);
+}
+/*body*/
+#MainContent{
+    border-radius: 10px;
+    text-align:center;
+    font-family:Calibri;
+    background-color:rgba(27,27,27,1);
+    margin-top: 50px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.LeftContent{
+    background-color:rgba(227,227,227,1);
+    text-align:left;
+    max-width:500px;
+    display:inline-block;
+    border-radius: 10px;
+    padding:10px;
+}
+td{
+    text-align:right;
+}
+.RightContent{
+    background-color:rgba(227,227,227,1);
+    display:inline-block;
+    padding:10px;
+    height: 50%;
+    position: fixed;
+    right: 8px;
+    width: 300px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 50px;
+}
+
+/*Footer*/
+#footer{
+    display:inline-block;
+    margin-top:10px;
+    background-color:rgba(227,227,227,1);
+    height:40px;
+    width:100%;
+    font-family:Calibri;
+    color:rgba(27,27,27,1)
+}
+#fLogo{
+    position:relative;
+    float:left;
+    top:25%;
+    margin-right:40px;
+    margin-left:40px;
+}
+#fInfo{
+    position:relative;
+    font-size:smaller;
+    float:left;
+}
